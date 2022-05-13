@@ -1,0 +1,46 @@
+# ABSTRACT :
+A wiper cleans raindrops or any other liquid off the vehicle's windscreen. The prior system required manual wiper activation,by changing the frequency As its results the operation of bringing up the wiper speed is varied . The project's goals are to improve ageing cars' systems by giving automated transmission wiping system, to improve the system by incorporating a sensor and actuator, and to create a simple software that would completely operate with the system.
+
+# INTRODUCTION :
+The operational speed of a wiper is controlled by a wiper speed control system in accordance with frequencies. The pulse signal is digitally processed to provide a control signal. A wiper driver circuit receives the control signal and adjusts the operational speed or timing in line with it.
+
+# SOFTWARE USED :
+1. STM32 CUBE IDE
+# COMPONENTS :
+1. STM32F4O7VG MICROCONTROLLER BOARD
+# DESCRIPTION
+# STM32F407VG :
+The STM32F407 Kit takes advantage of the high-performance STM32F407 microcontrollers' capabilities to make it simple for users to create audio-based applications.It comes with an ST-LINK embedded debug tool, an ST-MEMS digital accelerometer, a digital microphone, an audio DAC with integrated class D speaker driver, LEDs, pushbuttons, and a USB OTG micro-AB connector.Ethernet connectivity, an LCD display, and other features have been added to the STM32F4 DISCOVERY kit. The STM32F405xx and STM32F407xx families are built around the high-performance Arm® Cortex®-M4 32-bit RISC core, which runs at up to 168 MHz.
+
+# FEATURES OF STM32F407VG MICROCONTROLLER :
+* In a LQFP100 package, the STM32F407VGT6 microcontroller has a 32-bit ARM Cortex-M4 with FPU core, 1-Mbyte Flash memory, and 192-Kbyte RAM.
+
+* On-board ST-LINK/V2 or ST-LINK/V2-A on STM32F4 DISCOVERY (old reference) or STM32F407G-DISC1 (new order code)
+
+* USB ST-LINK with three separate interfaces and re-enumeration capability.
+
+* Virtual Com port Debug port (with new order code only)
+
+* Large-scale storage (with new order code only)
+
+* Board power is supplied through USB or an external 5 V supply source.
+
+* 3 V and 5 V external application power supply.
+
+# USES OF STM32F407VG MICROCONTROLLER :
+* This Microcontroller is utilised in printing and scanning machines ,heat ventilation, air conditioning, and security systems.
+
+* This module can be found in a variety of household products.
+
+# WORKING PRINCIPLE :
+Assume that the automobile is the microcontroller. If the button is hit, the first led (red) will turn on, Clicking again the wiper will start, and the second led (blue) will turn on for a desired rate. If the button is pressed again, the third led (green) will turn on, and the wiper's speed will be increased in comparison to the previous one. The fourth press will turn on the fourth led (orange), and the wiper speed will be increased in accordance with the previous one. The microcontroller (vehicle) is turned off after the fifth click.
+
+# 4W's
+# Who :
+* When it starts to rain, the front of the automobile normally employs a wiper system that uses two blades at once and a parallel tandem system to move the two blades. When the wiper motor starts to come on, the crank arm rotates, causing the connecting rods to pull and push against each other.
+# What :
+* Windshield wipers are a minor component of your vehicle, but they have a significant impact on your driving and overall safety. At the touch of a button, they quickly and cleanly remove rain, snow, dirt, pollen, frost, and other material. Windshield wiper arms are moved across the windshield by the windshield wiper motor.
+# Where :
+* A wiper drive and two wiper arms make up a windshield wiper system. The drive pushes the two wiper arms across the windshield at an angle that allows the driver and passenger to see clearly. A carefully contoured rubber wiping lip gives the best possible wipe.
+# Why :
+* The wiper cleans the front and rear windshields of the car, albeit not all cars have wipers on the back side. WIper cleans the windshield by removing oil, dust, moisture, and grime that have become attached.
