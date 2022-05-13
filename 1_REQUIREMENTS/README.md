@@ -1,42 +1,60 @@
-*WIPER CONTROL SYSTEM INTRODUCTION Wipers are a common feature in all automobiles now a days
+# INTRODUCTION :
+The operational speed of a wiper is controlled by a wiper speed control system in accordance with frequencies. The pulse signal is digitally processed to provide a control signal. A wiper driver circuit receives the control signal and adjusts the operational speed or timing in line with it.
 
-*‘Windscreen-wiper system’ means the system consisting of a device for wiping the outer face of the windscreen, together with the accessories and control necessary for starting and stopping the device. 
+# SOFTWARE USED :
+STM32CubeIDE
+# COMPONENTS :
+STM32F4O7VG MICROCONTROLLER BOARD
+# STM32F407VG :
+The STM32F407 Kit takes advantage of the high-performance STM32F407 microcontrollers' capabilities to make it simple for users to create audio-based applications.It comes with an ST-LINK embedded debug tool, an ST-MEMS digital accelerometer, a digital microphone, an audio DAC with integrated class D speaker driver, LEDs, pushbuttons, and a USB OTG micro-AB connector.Ethernet connectivity, an LCD display, and other features have been added to the STM32F4 DISCOVERY kit. The STM32F405xx and STM32F407xx families are built around the high-performance Arm® Cortex®-M4 32-bit RISC core, which runs at up to 168 MHz.
 
-*‘Windscreen-wiper field’ means the area of thhe outer face of a wet windscreen that is swept by the windscreen wiper.
+# FEATURES OF STM32F407VG MICROCONTROLLER :
+* In a LQFP100 package, the STM32F407VGT6 microcontroller has a 32-bit ARM Cortex-M4 with FPU core, 1-Mbyte Flash memory, and 192-Kbyte RAM.
 
-*Aim
+* On-board ST-LINK/V2 or ST-LINK/V2-A on STM32F4 DISCOVERY (old reference) or STM32F407G-DISC1 (new order code)
 
-The wiper serves to clean the windshield of the car at the front. WIper works by removing oil, dust, rainwater, and dirt that get stuck to the windshield. A wiper speed control system for an automotive wiper controls the operational speed of a wiper in accordance with rain conditions.The control signal is applied to a wiper driver circuit to adjust the operational speed or timing in accordance with the control signal.
+* USB ST-LINK with three separate interfaces and re-enumeration capability.
 
-*Objectives
+* Virtual Com port Debug port (with new order code only)
 
-the main objectives includes:
+* Large-scale storage (with new order code only)
 
-1)The main objective is to design and manufacture a new mechanism to cover the complete area of the wind screen.
+* Board power is supplied through USB or an external 5 V supply source.
 
-2)The main purpose of the wiper system is to clean the windscreen sufficiently to provide suitable visibility at all times.
+* 3 V and 5 V external application power supply.
 
-3)At present, engineers are investigating fully automated systems that vary the speed of the wiper blades according to the rate of the rainfall and the speed of the vehicle.
+# USES OF STM32F407VG MICROCONTROLLER :
+* This Microcontroller is utilised in printing and scanning machines ,heat ventilation, air conditioning, and security systems.
 
-4)The systemcontains a microcontroller that takes in the input signals from the sensors and controls the operation of the windshield wipers based on those input signals.
+* This module can be found in a variety of household products.
 
-*Introduction
+# FOLDER STRUCTURE :
+|Folder|	Description|
+|:----:|:-----------:|
+|1_Requirements|	Documents detailing requirements and research|
+|2_Architecture|	Documents specifying design details|
+|3_Implementation|	All code and documentation|
+|4_Testplan & Output|	Documents with test plans and procedures|
+# WORKING PRINCIPLE :
+Assuming that the automobile is the microcontroller(STM32F407VG). If the button is pressed , the first led (red) will turn on, Clicking again the wiper will starts , and the second led (blue) will turn on for a desired rate. If the button is pressed again , the third led (green) will turn on, and the wiper's speed will be increased in comparison to the previous one. The fourth press will turn on the fourth led (orange) , and the wiper speed will be increased in accordance with the previous one. The microcontroller (vehicle) is turned off after the fifth click of the button.
 
-Wiper is an essential component that used to wipe the raindrops or any water from the windscreen. Wipers are designed and made to clear the water from a windscreen. The wiper parts visible from outside the car are the rubber blade, the wiper arm holding theblade, a spring linkage, and parts of the wiper pivots. The wiper itself has about six parts called pressure points or claws that are small arms under the wiper.Existing system manually used control stalk to activate wiper and the process of pulling up wiper and the driver needs to switch on and off the control stalk.
-
-4W's and 1H
-
-What
-A windshield wiper system comprises a wiper drive and two wiper arms.
-
-When
-the wiper starts to turn on, the wiper motor will rotate the crank arm and this will make the connecting rods pull and push each other.
-
-Where
-wiper blade is a device used to remove rain,dust particles,snow ice...etc.
-
-Who
-wiper system is used to clean windscreen sufficiently to provide visibility to drive all the times.
-
-How
-Windshield wipers are operated by an electric motor.The electric motor is attached to a worm gear, which transmits the necessary force to a long rod that sets the wiper arms in motion.
+# 4W's
+# Who :
+When it starts to rain, the front of the automobile normally employs a wiper system that uses two blades at once and a parallel tandem system to move the two blades. When the wiper motor starts to come on, the crank arm rotates, causing the connecting rods to pull and push against each other.
+# What :
+Windshield wipers are a minor component of your vehicle, but they have a significant impact on your driving and overall safety. At the touch of a button, they quickly and cleanly remove rain, snow, dirt, pollen, frost, and other material. Windshield wiper arms are moved across the windshield by the windshield wiper motor.
+# Where :
+A wiper drive and two wiper arms make up a windshield wiper system. The drive pushes the two wiper arms across the windshield at an angle that allows the driver and passenger to see clearly. A carefully contoured rubber wiping lip gives the best possible wipe.
+# Why :
+The wiper cleans the front and rear windshields of the car, albeit not all cars have wipers on the back side. WIper cleans the windshield by removing oil, dust, moisture, and grime that have become attached.
+# HIGH LEVEL REQUIREMENTS
+|ID|	Description|	Status |
+|:--:|:----------:|:--------:|
+| HL1|	car wiper using STM32F407VG|	Implemented|
+|HL2	|Led glowing in sequence	|Implemented|
+|HL3|	Car on and off|	Implemented|
+# LOW LEVEL REQUIREMENTS
+|ID|	Description	|Status|
+|:----:|:----------:|:------:|
+|HL1-LL1|	Push Button|	Implemented|
+|HL2-LL2|	Red,Green,Blue Leds|	Implemented|
